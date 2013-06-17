@@ -1,11 +1,16 @@
 # [ngOverflowScroll](http://mgcrea.github.com/angular-overflow-scroll) [![Build Status](https://secure.travis-ci.org/mgcrea/angular-overflow-scroll.png?branch=master)](http://travis-ci.org/#!/mgcrea/angular-overflow-scroll)
 
-ngOverflowScroll provides the `scrollable` directive for an overflow-scroll using CSS3 native overflow (`-webkit-overflow-scrolling: touch`).
+ngOverflowScroll provides the `scrollable` directive for an always-on native style momentum scrolling `-webkit-overflow-scroll: touch`.
 
-The directives has a built-in debounce system listening on `$viewContentLoaded` & `$includeContentLoaded`.
-It will also append an invisible spacer to ensure the element is always touch-scrollable (even if it's height is too small).
+An element with `-webkit-overflow-scroll: touch` won't be scrollable if its content does not overscroll, it does lead to an akward behavior when something is sometimes scrollable & sometimes not.
+
+The directives has a built-in debounce system listening on `$viewContentLoaded` & `$includeContentLoaded` to re-calculate the proper height efficiently.
+
+
 
 ## Examples
+
+[![Demo](http://mgcrea.github.io/angular-overflow-scroll/images/demo.gif)](http://mgcrea.github.com/angular-overflow-scroll)
 
 ``` html
 <div class="content" scrollable>
@@ -26,7 +31,7 @@ $ bower install angular-overflow-scroll --save
 
 >
 ``` html
-<script src="components/angular-overflow-scroll/overflow-scroll.js"></script>
+<script src="components/angular-overflow-scroll/dist/overflow-scroll.min.js"></script>
 ```
 
 + Inject the `mgcrea.overflowScroll` module into your app:
