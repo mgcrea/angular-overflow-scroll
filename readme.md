@@ -1,10 +1,10 @@
 # [ngOverflowScroll](http://mgcrea.github.com/angular-overflow-scroll) [![Build Status](https://secure.travis-ci.org/mgcrea/angular-overflow-scroll.png?branch=master)](http://travis-ci.org/#!/mgcrea/angular-overflow-scroll)
 
-ngOverflowScroll provides the `scrollable` directive for an always-on native style momentum scrolling `-webkit-overflow-scroll: touch`.
+ngOverflowScroll provides the `scrollable` directive for an always-on native style momentum scrolling using `-webkit-overflow-scroll: touch`.
 
 An element with `-webkit-overflow-scroll: touch` won't be scrollable if its content does not overscroll, it does lead to an akward behavior when something is sometimes scrollable & sometimes not.
 
-The directives has a built-in debounce system listening on `$viewContentLoaded` & `$includeContentLoaded` to re-calculate the proper height efficiently.
+The directives has a built-in debounce system listening on `$viewContentLoaded` & `$includeContentLoaded` to re-calculate the proper required height efficiently.
 
 
 
