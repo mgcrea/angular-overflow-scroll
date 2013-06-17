@@ -1,0 +1,26 @@
+{
+  "name": "angular-overflow-scroll",
+  "description": "ngOverflowScroll - CSS3 Overflow Scroll directive for AngularJS",
+  "author": "Olivier Louvignes <olivier@mg-crea.com>",
+  "main": "./dist/overflow-scroll.min.js",
+  "version": "0.2.1",
+  "dependencies": {
+    "grunt": "~0.4.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-jshint": "~0.3.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-less": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.5.0",
+    "grunt-karma": "~0.3.0",
+    "grunt-ngmin": "~0.0.2",
+    "grunt-angular-templates": "~0.3.8",
+    "matchdep": "~0.1.1",
+    "grunt-bump": "0.0.6"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

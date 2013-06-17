@@ -1,14 +1,14 @@
 {
-  "author": "Olivier Louvignes",
   "name": "angular-overflow-scroll",
   "description": "ngOverflowScroll - CSS3 Overflow Scroll directive for AngularJS",
-  "version": "0.2.0",
+  "author": "Olivier Louvignes <olivier@mg-crea.com>",
+  "main": "./dist/overflow-scroll.min.js",
+  "version": "0.2.1",
   "homepage": "http://mgcrea.github.com/angular-overflow-scroll",
   "repository": {
     "type": "git",
     "url": "git://github.com/angular-strap/angular-overflow-scroll.git"
   },
-  "main": "./overflow-scroll.js",
   "dependencies": {
     "angular-unstable": "latest"
   }
