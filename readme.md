@@ -2,12 +2,13 @@
 
 ngOverflowScroll provides the `scrollable` directive for an overflow-scroll using CSS3 native overflow (`-webkit-overflow-scrolling: touch`).
 
-The directives has a built-in debounce system (400ms treshold by default) and will use a spacer to ensure the element is always touch-scrollable (even if it's height is too small).
+The directives has a built-in debounce system listening on `$viewContentLoaded` & `$includeContentLoaded`.
+It will also append an invisible spacer to ensure the element is always touch-scrollable (even if it's height is too small).
 
 ## Examples
 
 ``` html
-<div class="content" overflow-scroll>
+<div class="content" scrollable>
 </div>
 ```
 
